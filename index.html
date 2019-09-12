@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+  <title>Sally's Resume (REACT)</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        ReactDOM.render(
+            <div id="app-div">
+                <header>
+                    <hgroup>
+                        <h1>Sally Student</h1>
+                        <h2>Resume</h2>
+                    </hgroup>
+                </header>
+                <main>
+                    <section>
+                        <h3>Education</h3>
+                        <p>Completed the Full Stack Flex program through Thinkful in 2015.</p>
+                        <p>Attended New York University from 2010-2014 and earned a bachelor's degree in computer science.</p>
+                    </section>
+                    <section>
+                        <h3>Employment History</h3>
+                        <h4>Intel</h4>
+                        <ul>
+                            <li>Full Stack Developer</li>
+                            <li>2016-2018</li>
+                            <li>Optio non accusamus minima at laborum. Pariatur ut aliquid earum corrupti numquam quis.</li>
+                        </ul>
+                        <h4>Respawn</h4>
+                        <ul>
+                            <li>Web Developer</li>
+                            <li>2015-2016</li>
+                            <li>Ipsa dolorum sunt voluptatibus sit magni ab ut enim.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Skills</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>REACT</li>
+                        </ul>
+                    </section>
+                    <address>
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li>Sally Student</li>
+                            <li><a href="mailto:sallystudent@XDmail.com">Email</a></li>
+                            <li>Phone: (101) 867 - 5309</li>
+                            <li><img width="210" height="300" src="media/sally.jpg" alt="Sally Student" /></li>
+                        </ul>
+                    </address>
+                </main>
+            </div>,
+            document.querySelector('#application-root')
+        );
+    </script>
+</body>
+</html>
